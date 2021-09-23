@@ -8,12 +8,12 @@ class User:
         return "hello"
 
 # in the same file, add the following below the User class
-print(square(5))
-user = User("Anna")
-print(user.name)
-print(user.say_hello())
-
-print(__name__)
+if __name__ == "__main__": #making sure that this gets printed only if this is run directly from this file and not when this module (file) is imported on other file.
+    print(square(5))
+    user = User("Anna")
+    print(user.name)
+    print(user.say_hello())
+    print(__name__)
 
 if __name__ == "__main__":
     print("the file is being executed directly")
